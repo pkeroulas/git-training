@@ -34,3 +34,7 @@ Power shell:
 ```
 .\src\animate.ps1 .\samples\fishtank\
 ```
+
+# Support
+
+Author: pkeroulas
