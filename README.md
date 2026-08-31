@@ -1,6 +1,7 @@
 # git-training
 
-This is a repo to practice git with students.
+This is a repo to practice git with students. The goal is to create an ASCII art
+animation by coordinating script and graphic contributions.
 
 ```
    ,..     .    ,..     .    ,..     .    ,..     .    ,..     .    ,..     .
