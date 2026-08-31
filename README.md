@@ -20,5 +20,11 @@ This is a repo to practice git with students.
     ) )         '      (   (         ) )         '      (   (   \__/\
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 ```
-
 [ASCII sample source](https://ascii.co.uk/art/fish)
+
+# Animate
+
+Bash:
+```
+./src/animate.sh ./samples/fishtank/
+```
