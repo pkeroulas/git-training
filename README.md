@@ -29,3 +29,8 @@ Bash:
 ```
 ./src/animate.sh ./samples/fishtank/
 ```
+
+Power shell:
+```
+.\src\animate.ps1 .\samples\fishtank\
+```
