@@ -1,12 +1,29 @@
 #!/usr/bin/env bash
 
-# Function to print a file with a vertical Blue -> Red gradient
+# Function to print a file with a vertical gradient between two Hex colors
+# Usage: print_gradient "file.txt" "#HEX1" "#HEX2"
 print_gradient() {
     local file="$1"
+    local c1_hex="${2:-#0000FF}" # Default start: Blue
+    local c2_hex="${3:-#FF0000}" # Default end: Red
+
+    # Strip leading '#' if present
+    c1_hex="${c1_hex###}"
+    c2_hex="${c2_hex###}"
+
+    # Parse Start RGB components (hex to decimal)
+    local r1=$(( 16#${c1_hex:0:2} ))
+    local g1=$(( 16#${c1_hex:2:2} ))
+    local b1=$(( 16#${c1_hex:4:2} ))
+
+    # Parse End RGB components (hex to decimal)
+    local r2=$(( 16#${c2_hex:0:2} ))
+    local g2=$(( 16#${c2_hex:2:2} ))
+    local b2=$(( 16#${c2_hex:4:2} ))
+
     local lines
     lines=$(wc -l < "$file")
 
-    # Avoid division by zero if file has 0 or 1 line
     local denominator=1
     if (( lines > 1 )); then
         denominator=$(( lines - 1 ))
@@ -14,10 +31,10 @@ print_gradient() {
 
     local line_num=0
     while IFS= read -r line || [[ -n "$line" ]]; do
-        # Calculate Red (0 -> 255) and Blue (255 -> 0)
-        local r=$(( line_num * 255 / denominator ))
-        local b=$(( 255 - r ))
-        local g=0
+        # Interpolate R, G, B linearly between start and end
+        local r=$(( r1 + (r2 - r1) * line_num / denominator ))
+        local g=$(( g1 + (g2 - g1) * line_num / denominator ))
+        local b=$(( b1 + (b2 - b1) * line_num / denominator ))
 
         # Print with 24-bit ANSI color
         printf "\e[38;2;%d;%d;%dm%s\e[0m\n" "$r" "$g" "$b" "$line"
@@ -46,6 +63,6 @@ fi
 
 for file in "${files[@]}"; do
     clear
-    print_gradient "$file"
+    print_gradient "$file" "#0000FF" "#FF0000"
     sleep 0.5
 done
