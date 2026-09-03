@@ -4,7 +4,7 @@
 # Usage: print_gradient "file.txt" "#HEX1" "#HEX2"
 print_gradient() {
     local file="$1"
-    local c1_hex="${2:-#0000FF}" # Default start: Blue
+    local c1_hex="${2:-#00A0A0}" # Default start: Cyan
     local c2_hex="${3:-#FF0000}" # Default end: Red
 
     # Strip leading '#' if present
@@ -63,6 +63,6 @@ fi
 
 for file in "${files[@]}"; do
     clear
-    print_gradient "$file" "#0000FF" "#FF0000"
+    print_gradient "$file" "#00A0A0" "#FF0000"
     sleep 0.5
 done

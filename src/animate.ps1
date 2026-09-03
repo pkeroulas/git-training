@@ -1,6 +1,6 @@
 param (
     [string]$Directory = ".",
-    [string]$StartColor = "#0000FF",
+    [string]$StartColor = "#00A0A0",
     [string]$EndColor   = "#FF0000"
 )
 
