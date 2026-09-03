@@ -37,4 +37,4 @@ Power shell:
 
 # Support
 
-Author: pkeroulas
+Author: pkeroulas & co
