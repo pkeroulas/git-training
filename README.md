@@ -1,6 +1,5 @@
 # git-training
 
-Name: Sabraj Bhathal's Dummy README.md
 This is a repo to practice git with students. The goal is to create an ASCII art
 animation by coordinating script and graphic contributions.
 
