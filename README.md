@@ -29,3 +29,4 @@ Bash:
 ./src/animate.sh ./samples/fishtank/
 ```
 version: 1
+date: 09-2026
