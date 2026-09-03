@@ -28,3 +28,4 @@ Bash:
 ```
 ./src/animate.sh ./samples/fishtank/
 ```
+version: 1
