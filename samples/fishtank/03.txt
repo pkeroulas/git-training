@@ -1,14 +1,3 @@
-# git-training
-
-This is a repo to practice git with students. The goal is to create an ASCII art
-animation by coordinating script and graphic contributions.
-
-<<<<<<< HEAD
-This is the 1st modif on a from new host.
-version eric 2.0
-
-=======
-```
    ,..     .    ,..     .    ,..     .    ,..     .    ,..     .    ,..     .
 `~'   `~^~' ``~'   `~^~' ``~'   `~^~' ``~'   `~^~' ``~'   `~^~' ``~'   `~^~' `
                                                 <'}}}x 
@@ -18,29 +7,10 @@ version eric 2.0
        ;`, /   ( o\ 
        \  ;    `, / 
        ;_/"`.__.-"
-	                                                                    __
+	                                                               __
                                                                        /o \/
                                                                        \__/\
     ) )       `,  .'   (   (         ) )       `,  .'   (   (    __
    ( (          }/      )   )       ( (          }/      )   )  /o \/ 
     ) )         '      (   (         ) )         '      (   (   \__/\
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-```
-[ASCII sample source](https://ascii.co.uk/art/fish)
-
-# Animate
-
-Bash:
-```
-./src/animate.sh ./samples/fishtank/
-```
-
-Power shell:
-```
-.\src\animate.ps1 .\samples\fishtank\
-```
-
-# Support
-
-Author: pkeroulas
->>>>>>> a583d0b6dc2ef6e87bbe5ddb9f49dcf69b454fb7
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^03
