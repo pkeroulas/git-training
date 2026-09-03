@@ -63,6 +63,6 @@ fi
 
 for file in "${files[@]}"; do
     clear
-    print_gradient "$file" "#0000FF" "#FF0000"
+    print_gradient "$file" "#00A0A0" "#FF0000"
     sleep 0.5
 done
